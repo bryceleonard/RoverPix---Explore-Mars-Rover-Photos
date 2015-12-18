@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="app.css">
+  </head>
+  <body>
+
+  <section class="home">
+    <!-- <img id="nasaLogo" src="nasa-logo.png" alt="" /> -->
+    <div class="rover">
+    </div>
+      <img id="body" src="roverBody.png" alt="" />
+
+    <div class="mars">
+    <div class="marsdot" id="D1"></div>
+    <div class="marsdot" id="D6"></div>
+    <div class="marsdot" id="D2"></div>
+    <div class="marsdot" id="D3"></div>
+    <div class="marsdot" id="D4"></div>
+    <div class="marsdot" id="D5"></div>
+    </div>
+
+    <h1>ROVER<spanid id="logored"></span>PIX</h1>
+    <section class="spotify">
+
+    <iframe id="player" src="https://embed.spotify.com/?uri=spotify:user:brycesublime:playlist:50w10xOdg4gyqafufrQdtI" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
+    </section>
+      <button id="explorePhotos" type="button" name="ExplorePhotos">Explore Photos</button>
+      <button id="launchSpot" type="button" name="ExplorePhotos">Launch Playlist</button>
+  </section>
+
+  <section class="photoViewer">
+
+
+    <div class="photoOutput">
+      <div class="instructo">
+
+      <ul class="yoInstructions">
+        <li id="instructions">1. Select a rover</li>
+        <li id="instructions">2. Select a camera</li>
+        <li id="instructions">3. Click Go</li>
+        <li id="instructions">4. Click pix to enlarge</li>
+      </ul>
+      </div>
+
+    </div>
+
+    <div class="results">
+      <div class="resultsHolder">
+
+      </div>
+
+<div class="photoButtons">
+
+<form class="apiSelect" action="index.html" method="post">
+
+      <label for="cRad">Curiosity</label><input id="cRad"class="roverRadio" type="radio" name="roverradio" value="curiosity">
+      <label for="oRad">Opportunity</label><input id="oRad" class="roverRadio" type="radio" name="roverradio" value="opportunity">
+      <label for="sRad">Spirit</label><input id="sRad"class="roverRadio" type="radio" name="roverradio" value="spirit">
+      <br>
+    </form>
+    <form class="cuR" action="index.html" method="post">
+
+      <label for="1">Navigation</label><input id="1"class="cuRadio" type="radio" name="roverCU" value="navcam">
+      <label for="2">Front Hazard</label><input id="2"class="cuRadio" type="radio" name="roverCU" value="fhaz">
+      <label for="3">Rear Hazard</label><input id="3"class="cuRadio" type="radio" name="roverCU" value="rhaz">
+      <label for="4">Mast</label><input id="4"class="cuRadio" type="radio" name="roverCU" value="mast">
+      <label for="5">ChemCam</label><input id="5"class="cuRadio" type="radio" name="roverCU" value="chemcam">
+      <label for="9">Panoramic</label><input id="9"class="cuRadio" type="radio" name="roverCU" value="pancam">
+      <br>
+    </form>
+    <form class="opR" action="index.html" method="post">
+
+    <label for="10">Mini-TE</label><input id="10"class="opRadio" type="radio" name="roverOP" value="minites">
+      <label for="11">Front Hazard</label><input id="11"class="opRadio" type="radio" name="roverOP" value="fhaz">
+      <label for="12">Rear Hazard</label><input id="12"class="opRadio" type="radio" name="roverOP" value="rhaz">
+    </form>
+    <form class="spR" action="index.html" method="post">
+
+      <label for="13">Navigation</label><input id="13" class="spRadio" type="radio" name="roverCU" value="navcam">
+      <label for="14">Panoramic</label><input id="14"class="spRadio" type="radio" name="roverCU" value="pancam">
+      <label for="15">Mini-TE</label><input id="15"class="spRadio" type="radio" name="roverCU" value="minites">
+      <label for="16">Front Hazard </label><input id="16"class="spRadio" type="radio" name="roverCU" value="fhaz">
+      <label for="17">Rear Hazard </label><input id="17"class="spRadio" type="radio" name="roverCU" value="rhaz">
+    </form>
+    <form id="solInput" class="sol" action="index.html" method="post">
+      <p>Enter Sol (numbers only)</p><input id="solBox" style="text-align:center;valign:middle;" type="number" name="name" value="" placeholder="">
+    </form>
+
+      <input id="go" type="button" name="name" value="Go">
+
+
+</div>
+    </div>
+  </section>
+
+<section class="curiosityMain">
+<section class="curiosityLeft">
+  <h2>Curiosity</h2>
+  <br>
+  <h3>Primary mission duration: 668 sols ( 687 Earth days )</h3>
+  <h3>Current mission duration: 1196 sols (1228 days) </h3>
+  <br>
+
+
+  <img id="roverpic" src="http://cdn.timesofisrael.com/uploads/2014/12/rover-e1418780067606.jpg" alt="" />
+  <br>
+
+  <div class="missionTab">
+    <h4 id="goalsC">Mission Goals</h4>
+  </div>
+  <div class="curiosityStats">
+    <br>
+    <ul id="curiosityGoals">
+<br>
+<br>
+    <li>Investigate martian climate and geology, assessment of whether or not the Gale Crater has ever offered environmental conditions favorable for microbial life (water and planetary habitability).</li>
+<br>
+    <li>Investigate the building blocks of life (carbon, hydrogen, nitrogen, oxygen, phosphorus, and sulfur). </li>
+<br>
+    <li>Identify features that may represent the effects of biological processes (biosignatures and biomolecules).</li>
+<br>
+    </ul>
+  </div>
+</section>
+<section class="curiosityRight">
+    <div class="missionTabCam">
+    <h4 id="cameraTitleC">Cameras</h4>
+    </div>
+  <div class="curiosityCam">
+  <ul>
+<br>
+<br>
+  <li>Mast Camera -  MastCam - True Color images 1600X1200px, 720p video. 8 gigabytes of memory. </li>
+<br>
+  <li>Chemistry and Camera complex - ChemCam - two different instruments:  laser-induced breakdown spectroscopy and a Remote Micro Imager. The laser vaporizes soil samples up to 23 feet away from the drone and the Remote Micro Imager provides a high-resolution image of the sample.</li>
+<br>
+  <li>NavCam - Two pairs of black and white cameras mounted on the mast and create a stereoscopic 3-D image. </li>
+<br>
+  <li>Hazard Avoidance Camera - HazCams - four pairs of black and white cameras. They are used for autonomous hazard avoidance during rover drives and for safe positioning of the robotic arm on rocks and soils.</li>
+<br>
+  <li>Mars Hand Lens Imager - MAHLI - MAHLI is a camera on the rover's robotic arm, and acquires microscopic images of rock and soil. </li>
+<br>
+  <li>Mars Descent Imager - MARDI - During the descent to the Martian surface, MARDI took color images at 1600×1200 pixels with a 1.3-millisecond exposure time starting at distances of about 3.7 km (2.3 mi) to near 5 m (16 ft) from the ground, at a rate of four frames per second for about two minutes.</li>
+  </ul>
+  </div>
+</section>
+
+</section>
+<section class="opportunityMain">
+<section class="opportunityLeft">
+  <h2>Spirirt</h2>
+  <br>
+  <h3>Primary mission duration: 90 Sols (92 Earth days)</h3>
+  <h3>Current mission duration: Lost contact 2269 Sols </h3>
+  <br>
+
+
+  <img id="roverpicsp" src="https://upload.wikimedia.org/wikipedia/commons/d/d8/NASA_Mars_Rover.jpg" alt="" />
+  <br>
+
+  <div class="missionTab">
+    <h4 id="goalsC">Mission Goals</h4>
+  </div>
+  <div class="curiosityStats">
+    <br>
+    <ul id="curiosityGoals">
+<br>
+<br>
+    <li>Search for and characterize a variety of rocks and soils that hold clues to past water activity. In particular, samples sought will include those that have minerals deposited by water-related processes such as precipitation, evaporation, sedimentary cementation or hydrothermal activity.</li>
+<br>
+    <li>Determine what geologic processes have shaped the local terrain and influenced the chemistry. Such processes could include water or wind erosion, sedimentation, hydrothermal mechanisms, volcanism, and cratering. </li>
+<br>
+    <li>Search for geological clues to the environmental conditions that existed when liquid water was present.</li>
+<br>
+<li>Assess whether those environments were conducive to life.</li>
+<br>
+    </ul>
+  </div>
+</section>
+<section class="opportunityRight">
+  <div class="missionTabCamO">
+  <h4 id="cameraTitleC">Cameras</h4>
+  </div>
+<div class="curiosityCamO">
+<ul>
+<br>
+<br>
+<li>Panoramic Camera (Pancam) – examines the texture, color, mineralogy, and structure of the local terrain.
+ </li>
+<br>
+<li>Navigation Camera (Navcam) – monochrome with a higher field of view but lower resolution, for navigation and driving.</li>
+<br>
+<li>Miniature Thermal Emission Spectrometer (Mini-TES) – identifies promising rocks and soils for closer examination, and determines the processes that formed them. </li>
+<br>
+<li>Hazcams, two B&W cameras with 120 degree field of view, that provide additional data about the rover's surroundings.</li>
+<br>
+</ul>
+</div>
+</section>
+
+</section>
+
+<section class="curiosityMain">
+<section class="curiosityLeft">
+  <h2>Opportunity</h2>
+  <br>
+  <h3>Primary mission duration: 90 Sols</h3>
+  <h3>Current mission duration: 4229 Sols</h3>
+  <br>
+
+
+  <img id="roverpico" src="http://i2.wp.com/www.universetoday.com/wp-content/uploads/2014/12/rover21-full.jpg" alt="" />
+  <br>
+
+  <div class="missionTab">
+    <h4 id="goalsC">Mission Goals</h4>
+  </div>
+  <div class="curiosityStats">
+    <br>
+    <ul id="curiosityGoals">
+
+      <li>Search for and characterize a variety of rocks and soils that hold clues to past water activity. In particular, samples sought will include those that have minerals deposited by water-related processes such as precipitation, evaporation, sedimentary cementation or hydrothermal activity.</li>
+      <br>
+  <li>Determine the distribution and composition of minerals, rocks, and soils surrounding the landing sites.</li>
+  <br>
+      <li>Determine what geologic processes have shaped the local terrain and influenced the chemistry. Such processes could include water or wind erosion, sedimentation, hydrothermal mechanisms, volcanism, and cratering.</li>
+  <br>
+      <li>Perform calibration and validation of surface observations made by Mars Reconnaissance Orbiter instruments. This will help determine the accuracy and effectiveness of various instruments that survey Martian geology from orbit.</li>
+  <br>
+      <li>Search for iron-containing minerals, identify and quantify relative amounts of specific mineral types that contain water or were formed in water, such as iron-bearing carbonates.</li>
+  <br>
+      <li>Characterize the mineralogy and textures of rocks and soils and determine the processes that created them.</li>
+  <br>
+      <li>Search for geological clues to the environmental conditions that existed when liquid water was present.</li>
+  <br>
+      <li>Assess whether those environments were conducive to life.</li>
+  <br>
+    </ul>
+  </div>
+</section>
+<section class="curiosityRight">
+  <div class="missionTabCam">
+  <h4 id="cameraTitleC">Cameras</h4>
+  </div>
+<div class="curiosityCamop">
+  <ul>
+  <br>
+  <br>
+  <li>Panoramic Camera (Pancam) – examines the texture, color, mineralogy, and structure of the local terrain.
+   </li>
+  <br>
+  <li>Navigation Camera (Navcam) – monochrome with a higher field of view but lower resolution, for navigation and driving.</li>
+  <br>
+  <li>Miniature Thermal Emission Spectrometer (Mini-TES) – identifies promising rocks and soils for closer examination, and determines the processes that formed them. </li>
+  <br>
+  <li>Hazcams, two B&W cameras with 120 degree field of view, that provide additional data about the rover's surroundings.</li>
+  <br>
+  </ul>
+</div>
+</section>
+
+</section>
+
+<footer></footer>
+
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+  </body>
+  </body>
+
+
+</html>
